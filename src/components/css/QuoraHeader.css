@@ -1,0 +1,219 @@
+.qHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    box-shadow: 2px 3px 6px rgba(187, 187, 187, 0.5);
+    padding: 3px;
+
+}
+
+.qHeader-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.qHeader-logo > img{
+    height: 55px !important;
+    /* width: auto; */
+    object-fit: contain;
+}
+
+.qHeader-icons{
+    display: flex;
+}
+
+.qHeader-icon {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.qHeader-icon:hover {
+    background-color: #eee;
+    border-bottom: 4px solid rgb(212, 46, 46); 
+    border-radius: 5px;
+}
+
+.qHeader-icon > .MuiSvgIcon-root {
+    color: gray;
+    font-size: xx-large;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.qHeader-icon:hover > .MuiSvgIcon-root {
+    /* color: #000; */
+    color: rgb(212, 46, 46);
+
+}
+
+.qHeader-input{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.qHeader-input > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: rgb(49, 49, 49);
+}
+
+.qHeader-input > .MuiSvgIcon-root {
+    color: gray;
+}
+
+.qHeader-Rem {
+    cursor: pointer;
+}
+
+.qHeader-Rem > .MuiAvatar-root {
+    font-size: xx-large;
+    /* color: gray; */
+    margin-left: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.qHeader-Rem > .MuiAvatar-root:hover {
+    color: #000;
+}
+
+.qHeader-content > .MuiButton-root {
+  color: white;
+  background: rgb(212, 46, 46);
+  text-transform: inherit;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+  
+.qHeader-content > .MuiButton-root:hover {
+  color: #222;
+  background: rgb(214, 214, 214);  
+}
+
+/* Modal */
+.modal-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.5);
+  }
+  
+  .modal-title > h5 {
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 30px;
+  }
+  
+  .modal-title > h5:hover {
+    color: #b92b27;
+  }
+  
+  .modal-info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .modal-info > p {
+    margin-left: 10px;
+    font-size: small;
+    color: gray;
+  }
+  
+  .modal-info > .modal-scope {
+    display: flex;
+    align-items: center;
+    color: rgb(98, 98, 98);
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(230, 230, 230);
+    /* border: 1px solid lightgray; */
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+  }
+  
+  /* .modal-field > .modal-fieldLink {
+    color: gray;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal-field > .modal-fieldLink > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+  } */
+  
+  .modal-buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .modal-buttons > .cancel {
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons > .cancel:hover {
+    /* color: white; */
+    background: rgb(212, 46, 46);
+  }
+  
+  .modal-buttons > .add {
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    background-color: #222;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .modal-buttons > .add:hover {
+    background-color: #eee;
+    color: #222;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .qHeader-icons {
+      display: none;
+    }
+  
+    .qHeader-input {
+      display: none;
+    }
+  }

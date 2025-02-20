@@ -1,0 +1,64 @@
+.quoraBox{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 700px;
+}
+
+.quoraBox-info > input{
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 15px;
+    margin-left: 5px;
+    width: 80%;
+    background-color: rgb(237, 237, 237);
+
+
+}
+
+.quoraBox:hover{
+    border: 1px solid rgb(175,175,175);
+}
+
+.quoraBox-info{
+    display: flex;
+    align-items: center;
+    
+}
+
+.quoraBox-info > h5{
+    color: rgb(129,129,129);
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: large;
+}
+
+.quora-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quora-btns :hover{
+    color: rgb(212, 46, 46);
+}
+
+.quoraBox-quora{
+    display: flex;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+.quoraBox-quora > Button{
+    display: flex;
+    color: black;
+    
+}
+
+.MuiButtonBase-root > p{
+    margin-left: 4px;
+}
